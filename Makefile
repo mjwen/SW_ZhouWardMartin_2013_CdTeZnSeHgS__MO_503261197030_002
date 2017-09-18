@@ -29,10 +29,6 @@
 #    Mingjian Wen
 #
 
-#
-# Release: This file is part of the kim-api.git repository.
-#
-
 
 # load all basic KIM make configuration
 ifeq ($(wildcard ../Makefile.KIM_Config),)
