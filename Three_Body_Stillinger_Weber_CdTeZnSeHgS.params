@@ -24,12 +24,20 @@ S   S   19.2768737070  1.049688  4  0  2.423171  79.1333075  2.9078052  -0.33333
 
 
 #
-# First line, number of species
+# First line: number of species
 #
-# Each data line lists the following 9 parameters for the interaction between
-# two species:
+# Then each data line lists two species and 9 parameters for the interaction between
+# the two species:
+#   species1 species2 A B p q sigma lambda gamma costheta_0 cutoff
 #
-# Species1 Species2 A B p q sigma lambda gamma costheta_0 cutoff
+#   species1 and species are valid KIM API particle species string
+#   A and lambda in [eV]
+#   sigma, gamma, and cutoff in [Angstrom]
+#   others are unitless
 #
-# A and lambda are in eV, sigma, gamma, and cutoff are in Angstrom, others are unitless.
+
+#
+# Parameters taken from:
+#  X. W. Zhou, D. K. Ward, and J. E. Martin, et al, "Stillinger-Weber potential
+#  for the II-VI elements Zn-Cd-Hg-S-Se-Te" Phys. Rev. B, 88, 085309, 2013
 #
