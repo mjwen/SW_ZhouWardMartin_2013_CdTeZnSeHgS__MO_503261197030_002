@@ -36,15 +36,6 @@ S   S   19.2768737070  1.049688  4  0  2.423171  79.1333075  2.9078052  -0.33333
 #   others are unitless
 #
 
-# The internal species code for Species are:
-#   Cd 0
-#   Te 1
-#   Zn 2
-#   Se 3
-#   Hg 4
-#   S  5
-
-
 #
 # Parameters taken from:
 #  X. W. Zhou, D. K. Ward, and J. E. Martin, et al, "Stillinger-Weber potential

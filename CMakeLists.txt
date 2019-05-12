@@ -23,24 +23,18 @@
 # All rights reserved.
 #
 # Contributors:
-#    Richard Berger
-#    Christoph Junghans
-#    Ryan S. Elliott
-#
-
-#
-# Release: This file is part of the kim-api.git repository.
+#    Mingjian Wen
 #
 
 
 #
-# Requied preamble
+# Required preamble
 #
 
 cmake_minimum_required(VERSION 3.4)
 
-list(APPEND CMAKE_PREFIX_PATH $ENV{KIM_API_V2_CMAKE_PREFIX_DIR})
-find_package(KIM-API-V2 2.0 REQUIRED CONFIG)
+list(APPEND CMAKE_PREFIX_PATH $ENV{KIM_API_CMAKE_PREFIX_DIR})
+find_package(KIM-API 2.0 REQUIRED CONFIG)
 if(NOT TARGET kim-api)
   enable_testing()
   project("${KIM_API_PROJECT_NAME}" VERSION "${KIM_API_VERSION}"
@@ -51,7 +45,7 @@ endif()
 
 
 add_kim_api_model_library(
-  NAME            "Three_Body_Stillinger_Weber_CdTeZnSeHgS__MO_503261197030_001"
-  DRIVER_NAME     "Three_Body_Stillinger_Weber__MD_335816936951_003"
-  PARAMETER_FILES "Three_Body_Stillinger_Weber_CdTeZnSeHgS.params"
+  NAME            "SW_ZhouWardMartin_2013_CdTeZnSeHgS__MO_503261197030_002"
+  DRIVER_NAME     "SW__MD_335816936951_004"
+  PARAMETER_FILES "ZhouWardMartin_2013_CdTeZnSeHgS.params"
   )
